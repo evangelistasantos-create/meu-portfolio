@@ -1,7 +1,16 @@
 const projetos = [
-  { nome: "Portfólio", descricao: "Meu primeiro site" },
-  { nome: "Site Responsivo", descricao: "Funciona no celular" },
-  { nome: "Projeto", descricao: "Atividade" }
+  {
+    nome: "Portfólio",
+    descricao: "Meu primeiro site usando HTML, CSS e JavaScript"
+  },
+  {
+    nome: "Site Responsivo",
+    descricao: "Funciona em celular e computador"
+  },
+  {
+    nome: "Projeto Escolar",
+    descricao: "Atividade prática da escola"
+  }
 ];
 
 const lista = document.getElementById("lista-projetos");
@@ -11,8 +20,8 @@ projetos.forEach(projeto => {
   div.classList.add("card");
 
   div.innerHTML = `
-    <h3>$ {projeto.nome}</h3>
-    <p>$ {projeto.descricao}</p>
+    <h3>${projeto.nome}</h3>
+    <p>${projeto.descricao}</p>
   `;
 
   lista.appendChild(div);
